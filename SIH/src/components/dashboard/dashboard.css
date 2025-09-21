@@ -1,0 +1,80 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-content {
+  margin-left: 18rem; /* sidebar width */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: #f3f4f6;
+}
+
+.dashboard {
+  padding: 2rem 2.5rem;
+  flex: 1;
+}
+
+.page-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.page-wrapper p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.dashboard-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.widget {
+  background: #fff;
+  border-radius: 1rem;
+  /* padding: 1rem; */
+  /* flex: 1; */
+  min-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.wordcloud-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.piechart-widget {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.chart-widget{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.counters-div{
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  justify-content: center;
+  padding-bottom: 30px;
+  
+  background-color: #f3f4f6;
+}

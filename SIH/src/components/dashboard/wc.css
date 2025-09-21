@@ -1,0 +1,59 @@
+.wordcloud-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.widget {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wordcloud-widget {
+  flex: 1;
+  max-width: 400px;
+}
+
+.piechart-widget {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.wordcloud-widget svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .wordcloud-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wordcloud-widget,
+  .piechart-widget {
+    max-width: 90%;
+  }
+}
+
+

@@ -1,0 +1,90 @@
+/* Blur background */
+.content-wrapper.blur-bg {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* Chart Modal Overlay */
+.chart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.chart-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  max-width: 900px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.chart-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.timeframe-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeframe-buttons button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #e0e0e0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.timeframe-buttons button:hover {
+  background: #ccc;
+}
+
+.timeframe-buttons button.active {
+  background: #1976d2;
+  color: #fff;
+}
+
+.chart-wrapper {
+  width: 100%;
+  min-width: 400px;
+  height: 400px;
+}
+
+.add-in-export1{
+  position: relative;
+  right: 400px;
+
+  width: 100px;
+  height: 40px;
+  background-color: #1976d2;
+  border-radius: 20px;
+  border: none;
+ 
+}

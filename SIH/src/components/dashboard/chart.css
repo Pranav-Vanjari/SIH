@@ -1,0 +1,78 @@
+.sentiment-chart-container {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.timeframe-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeframe-buttons button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #e0e0e0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.timeframe-buttons button:hover {
+  background: #ccc;
+}
+
+.timeframe-buttons button.active {
+  background: #1976d2;
+  color: #fff;
+}
+
+/* Chart wrapper to fill container width */
+.chart-wrapper {
+  width: 100%;
+  max-width: 900px; /* optional max width */
+  height: 400px;
+}
+
+/* Optional: responsive adjustments */
+@media (max-width: 768px) {
+  .chart-wrapper {
+    height: 350px;
+  }
+
+  .chart-title {
+    font-size: 1.3rem;
+  }
+
+  .timeframe-buttons button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
