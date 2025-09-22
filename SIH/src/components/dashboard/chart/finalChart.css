@@ -73,8 +73,11 @@
 
 .chart-wrapper {
   width: 100%;
-  min-width: 400px;
+  min-width: 500px;
   height: 400px;
+}
+.small-chart{
+  width: 600px;
 }
 
 .add-in-export1{

@@ -1,0 +1,91 @@
+.expectation-container {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937; /* Gray-800 */
+}
+
+.expectation-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .expectation-grid {
+    flex-direction: row;
+  }
+}
+
+.expectation {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.expectation.expected {
+  background: #ecfdf5; /* Green-50 */
+  border: 1px solid #d1fae5; /* Green-200 */
+  color: #047857; /* Green-700 */
+}
+
+.expectation.got {
+  background: #fef2f2; /* Red-50 */
+  border: 1px solid #fecaca; /* Red-200 */
+  color: #b91c1c; /* Red-700 */
+}
+
+.expectation h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.expectation ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.expectation li {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+/* Negative section container */
+.negative-section {
+  background: #fef2f2;       /* Light red background */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #fecaca; /* Red-200 border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+/* Negative section heading */
+.negative-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #b91c1c; /* Red-700 */
+  margin-bottom: 0.75rem;
+}
+
+/* List inside negative section */
+.negative-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
+.negative-list li {
+  font-size: 0.95rem;
+  color: #991b1b; /* Darker red */
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}

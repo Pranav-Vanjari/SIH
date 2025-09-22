@@ -71,7 +71,12 @@ const Chart = ({ closeChart }) => {
         <button className="close-btn" onClick={closeChart}>
           ✖
         </button>
-        <h2 className="chart-title">Sentiment Trends</h2>
+        <div>
+          <h2 className="chart-title">Sentiment Trends</h2>
+          <center>
+            <h3>Range(to/from)</h3>
+          </center>
+        </div>
 
         <div className="timeframe-buttons">
           <button

@@ -23,7 +23,7 @@ const monthlyData = [
 const Sentimentchart = ({ handleChartClick }) => {
   return (
     <div
-      className="sentiment-chart-container"
+      className="sentiment-chart-container small-chart"
       onDoubleClick={handleChartClick}
     >
       <h2 className="chart-title">Sentiment Trends</h2>

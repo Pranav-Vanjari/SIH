@@ -34,6 +34,7 @@
 .dashboard-widgets {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -42,7 +43,7 @@
   border-radius: 1rem;
   /* padding: 1rem; */
   /* flex: 1; */
-  min-width: 500px;
+  /* min-width: 500px; */
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
@@ -58,14 +59,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  width: 400px;
 }
 
 .chart-widget{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 700px;
 
 }
 

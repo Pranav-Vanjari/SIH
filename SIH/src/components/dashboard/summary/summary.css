@@ -15,6 +15,10 @@
   max-width: 700px;
 }
 
+.summary-card:hover{
+  cursor: pointer;
+}
+
 .summary-header {
   display: flex;
   align-items: center;
@@ -32,7 +36,8 @@
   font-weight: bold;
   color: #111827;
   position: relative;
-  bottom: 53px;
+  bottom: 69px;
+
 }
 
 .summary-subtitle {

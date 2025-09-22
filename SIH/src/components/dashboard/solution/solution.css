@@ -1,0 +1,44 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.solutions-grid {
+  display: flex;
+  flex-wrap: wrap;          /* Allow wrapping to new rows */
+  gap: 2rem;                /* Space between cards */
+  justify-content: center;  /* Center the cards horizontally */
+  max-width: 1200px;        /* Max width of the container */
+  margin: 0 auto;           /* Center the container in page */
+}
+
+.solutions-grid > * {
+  flex: 1 1 100%;           /* Default: full width on small screens */
+  max-width: 500px;         /* Limit individual card width */
+}
+
+@media (min-width: 768px) {
+  .solutions-grid > * {
+    flex: 1 1 calc(50% - 2rem); /* 2 cards per row with gap considered */
+  }
+}
+
+@media (min-width: 1024px) {
+  .solutions-grid > * {
+    flex: 1 1 calc(33.333% - 2rem); /* 3 cards per row */
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  color: #1f2937; /* Gray-800 */
+}

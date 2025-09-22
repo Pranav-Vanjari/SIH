@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Chart from "./Chart";
+import Chart from "./chart";
 import Sentimentchart from "./sentimentchart";
 import "./finalChart.css";
 

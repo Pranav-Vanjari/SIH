@@ -8,13 +8,14 @@ import {
 } from "react-router-dom";
 import Header from "../header";
 import Sidebar from "../sidebar";
-import FinalWordCloud from "./wc";
-import PieChart from "./piechart";
+import FinalWordCloud from "./wordcloud/wc";
+import PieChart from "./piechart/piechart";
 import CountingText from "./countercard";
 import Comment from "../comment";
-import FinalChart from "./finalChart";
+import FinalChart from "./chart/finalChart";
 import "./dashboard.css";
-import FinalSummary from "./mainSummary";
+import FinalSummary from "./summary/mainSummary";
+import Solution from "./solution/solution";
 
 // Pages
 const DashboardPage = () => (
@@ -27,11 +28,11 @@ const DashboardPage = () => (
     </div>
 
     <div className="dashboard-widgets">
-      <div className="widget chart-widget">
-        <FinalChart />
-      </div>
       <div className="widget piechart-widget">
         <PieChart />
+      </div>
+      <div className="widget chart-widget">
+        <FinalChart />
       </div>
       <div className="widget wordcloud-widget">
         <FinalWordCloud />
@@ -58,8 +59,7 @@ const ReportsPage = () => (
 
 const SolutionsPage = () => (
   <div className="page-wrapper">
-    <h2>Solutions</h2>
-    <p>Proposed solutions based on the analysis of public feedback.</p>
+      <Solution></Solution>
   </div>
 );
 

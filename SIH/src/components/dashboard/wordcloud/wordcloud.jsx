@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import cloud from "d3-cloud";
 import * as d3 from "d3";
-import "./piechart.css"
+import "../piechart/piechart.css"
 
 const WordCloud = ({ onWordClick }) => {
   const svgRef = useRef();
@@ -23,7 +23,7 @@ const WordCloud = ({ onWordClick }) => {
   };
 
   useEffect(() => {
-    const width = 400;
+    const width = 500;
     const height = 350;
     const BLUE = "#0d47a1";
     const HOVER_BLUE = "#06357a";

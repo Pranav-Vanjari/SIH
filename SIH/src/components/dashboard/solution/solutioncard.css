@@ -1,0 +1,82 @@
+.solution-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+.solution-card:hover {
+  transform: translateY(-4px);
+}
+.solution-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.solution-id {
+  background: #dbeafe;
+  color: #1d4ed8;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+.solution-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.solution-description {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+.solution-steps ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+.solution-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.btn {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn.helpful {
+  background: #ecfdf5;
+  color: #047857;
+}
+.btn.helpful.active {
+  background: #047857;
+  color: white;
+}
+.btn.escalate {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+.btn.escalate.active {
+  background: #b91c1c;
+  color: white;
+}
+.btn.regenerate {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+.btn.regenerate.loading {
+  background: #1d4ed8;
+  color: white;
+  cursor: not-allowed;
+}
