@@ -1,0 +1,5 @@
+.app-container {
+  background: #f3f4f6;
+  display: flex;
+  padding-left: 3rem;          /* Push a bit inside from left */
+}

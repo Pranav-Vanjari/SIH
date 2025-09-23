@@ -2,7 +2,7 @@ import "./summary.css";
 import { useState } from "react";
 import Widesummary from "./wideSummary";
 
-const Summary = ({ summaryText, title = "Amendment #001 Analysis Summary:" }) => {
+const Summary = ({ summaryText, title = "Chapter #001 Analysis Summary:" }) => {
   const [showWide, setShowWide] = useState(false);
 
   // Close handler

@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Left Section */
+.header-left .header-title {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+.header-left .header-subtitle {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* Middle Nav Links */
+.header-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #374151;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transform: scale(1.1);
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6;
+  color: #2563eb;
+}
+
+/* Active/Click state */
+.nav-link:active,
+.nav-link.active {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+/* Right Section Buttons */
+.header-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+}
+
+.primary-btn {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.primary-btn:active {
+  background-color: #1e4bb8;
+}
+
+.secondary-btn {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.secondary-btn:active {
+  background-color: #e5e7eb;
+}

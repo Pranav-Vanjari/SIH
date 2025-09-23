@@ -1,0 +1,115 @@
+/* Container */
+
+/* Wrapper stays left aligned */
+.comments-wrapper {
+  max-width: 800px;
+}
+
+/* Heading */
+.comments-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* Comment list */
+.comments-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Comment Card */
+.comment-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.comment-card:hover {
+  transform: scale(1.01);
+}
+
+/* Context */
+.comment-context {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.comment-amendment {
+  font-weight: 600;
+  color: #374151;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: #9ca3af;
+}
+
+/* Header */
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.comment-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.comment-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Text */
+.comment-text {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Status */
+.comment-status {
+  align-self: flex-end;
+}
+
+.status-analyzed {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.statu-pending {
+  color: #6b7280;
+  font-weight: 600;
+}
+.comment-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
