@@ -10,7 +10,7 @@ const PieChart = () => {
   const chartData = {
     labels: ['Negative', 'Neutral', 'Positive'],
     datasets: [{
-      data: [28, 30, 42],
+      data: [40, 35, 25],
       backgroundColor: ['#ef4444', '#6b7280', '#22c55e'],
       borderWidth: 4,
       borderColor: '#ffffff',

@@ -22,9 +22,9 @@ const DashboardPage = () => (
   <div className="page-wrapper">
     <div className="counters-div">
       <CountingText number={500} text={"Total Comments"} />
-      <CountingText number={110} text={"Positive"} color="green" />
-      <CountingText number={310} text={"Negative"} color="red"/>
-      <CountingText number={80} text={"Neutral"} color="gray" />
+      <CountingText number={170} text={"Positive"} color="green" />
+      <CountingText number={225} text={"Negative"} color="red"/>
+      <CountingText number={125} text={"Neutral"} color="gray" />
     </div>
 
     <div className="dashboard-widgets">
