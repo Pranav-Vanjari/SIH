@@ -2,6 +2,8 @@
   display: flex;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  align-items: center;       /* center horizontally */
+  justify-content: center;  
 }
 
 .main-content {
@@ -51,8 +53,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;}
 
-}
+.summary-widget{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  padding: 10px;
+  }
+
 
 .piechart-widget {
 
@@ -73,9 +83,11 @@
 .counters-div{
   display: flex;
   align-items: center;
-  gap: 55px;
+  gap: 10px;
   justify-content: center;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   
   background-color: #f3f4f6;
 }

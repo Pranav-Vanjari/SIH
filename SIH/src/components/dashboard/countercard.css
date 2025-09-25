@@ -3,15 +3,15 @@
   flex-direction: column;
   align-items: center;       /* center horizontally */
   justify-content: center;   /* center vertically */
-  width: 70%;               /* responsive width */
-  max-width: 180px;          /* prevent too wide */
+  width: 100%;               /* responsive width */
+  max-width: 280px;          /* prevent too wide */
   min-width: 100px;          /* prevent shrinking too much */
   max-height: 100px;              /* auto height */
-  height: 70%;
+  height: 70px;
   aspect-ratio: 2 / 1;       /* keeps shape balanced */
   background-color: white;
   padding: 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border: 1px solid #e5e7eb; /* gray-200 */
   transition: transform 0.2s;
@@ -25,11 +25,15 @@
   font-size: clamp(1rem, 2.5vw, 1.5rem);  /* responsive text size */
   font-weight: 800;
   text-align: center;
+  transform: scale(1.2);
+  position: relative;
+  top: 10px;
 }
 
 .count-number {
   font-size: clamp(0.9rem, 2vw, 1.2rem); /* responsive number size */
   font-weight: 700;
-  margin-top: 0.3rem;
+  margin-top: 0;
   text-align: center;
+  transform: scale(1.2);
 }

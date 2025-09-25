@@ -22,9 +22,9 @@ const DashboardPage = () => (
   <div className="page-wrapper">
     <div className="counters-div">
       <CountingText number={500} text={"Total Comments"} />
-      <CountingText number={170} text={"Positive"} color="green" />
-      <CountingText number={225} text={"Negative"} color="red"/>
-      <CountingText number={125} text={"Neutral"} color="gray" />
+      <CountingText number={170} text={"Positive"}  />
+      <CountingText number={225} text={"Negative"}/>
+      <CountingText number={125} text={"Neutral"} />
     </div>
 
     <div className="dashboard-widgets">
@@ -37,7 +37,7 @@ const DashboardPage = () => (
       <div className="widget wordcloud-widget">
         <FinalWordCloud />
       </div>
-      <div className="widget wordcloud-widget">
+      <div className="widget summary-widget">
         <FinalSummary />
       </div>
     </div>

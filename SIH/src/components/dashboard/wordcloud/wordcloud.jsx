@@ -23,7 +23,6 @@ const WordCloud = ({ onWordClick }) => {
   useEffect(() => {
     const width = 500;
     const height = 350;
-    const BLUE = "#0d47a1";
     const HOVER_BLUE = "#06357a";
 
     d3.select(svgRef.current).selectAll("*").remove();
@@ -32,12 +31,13 @@ const WordCloud = ({ onWordClick }) => {
     const values = words.map(d => d.value);
     const fontScale = d3.scaleLinear()
       .domain([Math.min(...values), Math.max(...values)])
-      .range([18, 46]); // control max size to avoid overlap
+      .range([18, 56]);
 
-    // Prepare words with scaled sizes
     const sizedWords = words.map(d => ({ ...d, size: fontScale(d.value) }));
 
-    // Seeded random for consistent but “random-looking” placement
+    // Color scale for words
+    const colorScale = d3.scaleOrdinal(d3.schemeCategory10); // 10 different colors
+
     const seededRandom = (seed) => {
       let x = Math.sin(seed++) * 10000;
       return x - Math.floor(x);
@@ -46,12 +46,12 @@ const WordCloud = ({ onWordClick }) => {
     const layout = cloud()
       .size([width, height])
       .words(sizedWords.map(d => ({ text: d.text, size: d.size })))
-      .padding(6) // increase padding to spread words
-      .rotate(() => 0) // all horizontal
+      .padding(4)
+      .rotate(() => 0)
       .font("Arial Black")
       .fontSize(d => d.size)
       .random(() => seededRandom(42))
-      .spiral("rectangular") // spreads words evenly
+      .spiral("rectangular")
       .on("end", draw);
 
     layout.start();
@@ -70,14 +70,14 @@ const WordCloud = ({ onWordClick }) => {
         .append("text")
         .attr("text-anchor", "middle")
         .attr("transform", d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
-        .attr("fill", BLUE)
+        .attr("fill", (d, i) => colorScale(i)) // assign color
         .style("font-family", "Arial Black, Arial, sans-serif")
         .style("cursor", "pointer")
         .style("font-size", d => `${d.size}px`)
         .text(d => d.text)
         .on("click", (event, d) => onWordClick(d.text))
         .on("mouseenter", function() { d3.select(this).attr("fill", HOVER_BLUE); })
-        .on("mouseleave", function() { d3.select(this).attr("fill", BLUE); });
+        .on("mouseleave", function(d, i) { d3.select(this).attr("fill", colorScale(i)); });
     }
   }, [onWordClick]);
 

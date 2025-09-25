@@ -13,33 +13,39 @@ import {
 import "./FinalChart.css";
 
 const daywiseData = [
-  { day: "Mon", Positive: 40, Negative: 20, Neutral: 30 },
-  { day: "Tue", Positive: 35, Negative: 25, Neutral: 40 },
-  { day: "Wed", Positive: 50, Negative: 15, Neutral: 20 },
-  { day: "Thu", Positive: 45, Negative: 20, Neutral: 25 },
-  { day: "Fri", Positive: 60, Negative: 10, Neutral: 15 },
-  { day: "Sat", Positive: 55, Negative: 15, Neutral: 20 },
-  { day: "Sun", Positive: 65, Negative: 12, Neutral: 18 },
+  { day: "Mon", Positive: 4, Negative: 2, Neutral: 0 },
+  { day: "Tue", Positive: 3, Negative: 2, Neutral: 0 },
+  { day: "Wed", Positive: 5, Negative: 1, Neutral: 0 },
+  { day: "Thu", Positive: 4, Negative: 2, Neutral: 5 },
+  { day: "Fri", Positive: 6, Negative: 1, Neutral: 1 },
+  { day: "Sat", Positive: 5, Negative: 1, Neutral: 2 },
+  { day: "Sun", Positive: 6, Negative: 1, Neutral: 1 },
 ];
 
 const weeklyData = [
-  { week: "W1", Positive: 120, Negative: 80, Neutral: 100 },
-  { week: "W2", Positive: 140, Negative: 70, Neutral: 90 },
-  { week: "W3", Positive: 160, Negative: 60, Neutral: 80 },
-  { week: "W4", Positive: 180, Negative: 50, Neutral: 70 },
-  { week: "W5", Positive: 180, Negative: 50, Neutral: 70 },
-  { week: "W6", Positive: 120, Negative: 20, Neutral: 60 },
-  { week: "W7", Positive: 110, Negative: 10, Neutral: 10 },
-  { week: "W8", Positive: 180, Negative: 50, Neutral: 70 },
+  { week: "W1", Positive: 20, Negative:13, Neutral: 10 },
+  { week: "W2", Positive: 10, Negative: 7, Neutral: 9 },
+  { week: "W3", Positive: 15, Negative: 11, Neutral: 8 },
+  { week: "W4", Positive: 18, Negative: 15, Neutral: 7 },
+  { week: "W5", Positive: 18, Negative: 5, Neutral: 7 },
+  { week: "W6", Positive: 12, Negative: 12, Neutral: 6 },
+  { week: "W7", Positive: 11, Negative: 4, Neutral: 10 },
+  { week: "W8", Positive: 18, Negative: 5, Neutral: 7 },
 ];
 
 const monthlyData = [
-  { month: "Jan-Feb", Positive: 400, Negative: 200, Neutral: 300 },
-  { month: "Mar-Apr", Positive: 450, Negative: 170, Neutral: 260 },
-  { month: "May-Jun", Positive: 500, Negative: 150, Neutral: 220 },
-  { month: "Jul-Aug", Positive: 530, Negative: 140, Neutral: 210 },
-  { month: "Sep-Oct", Positive: 530, Negative: 140, Neutral: 210 },
-  { month: "Nov-Dec", Positive: 50, Negative: 40, Neutral: 10 },
+  { month: "Jan", Positive: 40, Negative: 10, Neutral: 30 },
+  { month: "Feb", Positive: 30, Negative: 10, Neutral: 30 },
+  { month: "Mar", Positive: 25, Negative: 17, Neutral: 60 },
+  { month: "Apr", Positive: 50, Negative: 70, Neutral: 20 },
+  { month: "May", Positive: 90, Negative: 50, Neutral: 10 },
+  { month: "Jun", Positive: 19, Negative: 15, Neutral: 20 },
+  { month: "Jul", Positive: 30, Negative: 40, Neutral: 20 },
+  { month: "Aug", Positive: 30, Negative: 14, Neutral: 20 },
+  { month: "Sep", Positive: 50, Negative: 40, Neutral: 10 },
+  { month: "Oct", Positive: 30, Negative: 14, Neutral: 21 },
+  { month: "Nov", Positive: 50, Negative: 40, Neutral: 10 },
+  { month: "Dec", Positive: 10, Negative: 14, Neutral: 10 },
 ];
 
 const Chart = ({ closeChart }) => {

@@ -13,8 +13,8 @@ const Dashboard = () => {
       postTitle: "THE COMPANIES ACT, 2013",
       amendment: "Draft Chapter #001",
       section: "Section 3.2: Digital Filing",
-      date: "Oct 2, 2023",
-      status: "SEEN"
+      date: "Oct 1, 2025",
+      status: "Pending"
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ const Dashboard = () => {
       amendment: "Draft Chapter #001",
       section: "Section 3.2: Digital Filing",
       date: "Sep 28, 2023",
-      status: "Pending"
+      status: "SEEN"
     }
   ]);
 
