@@ -1,15 +1,19 @@
 .count-card {
   display: flex;
   flex-direction: column;
-  align-items: center;          /* center content horizontally */
-  justify-content: center;      /* center content vertically */
-  width: 150px;                 /* fixed width */
-  height: 70px;                /* increased height for larger text */
+  align-items: center;       /* center horizontally */
+  justify-content: center;   /* center vertically */
+  width: 70%;               /* responsive width */
+  max-width: 180px;          /* prevent too wide */
+  min-width: 100px;          /* prevent shrinking too much */
+  max-height: 100px;              /* auto height */
+  height: 70%;
+  aspect-ratio: 2 / 1;       /* keeps shape balanced */
   background-color: white;
   padding: 1rem;
   border-radius: 1.5rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border: 1px solid #e5e7eb;   /* gray-200 */
+  border: 1px solid #e5e7eb; /* gray-200 */
   transition: transform 0.2s;
 }
 
@@ -18,16 +22,14 @@
 }
 
 .count-text {
-  font-size: 2.5rem;            /* increased text size */
+  font-size: clamp(1rem, 2.5vw, 1.5rem);  /* responsive text size */
   font-weight: 800;
-  color: black;
-  position: relative;
-  top: 20px;
+  text-align: center;
 }
 
 .count-number {
-  font-size: 2rem;              /* increased number size */
+  font-size: clamp(0.9rem, 2vw, 1.2rem); /* responsive number size */
   font-weight: 700;
-  color: #111827;               /* gray-900 */
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
+  text-align: center;
 }

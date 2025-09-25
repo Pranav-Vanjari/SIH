@@ -98,6 +98,9 @@
 
 .nav-links .icon {
   margin-right: 0.75rem;
+  font-size: larger;
+  position: relative;
+  top: 3px;
 }
 
 .export-option{

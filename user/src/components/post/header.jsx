@@ -27,14 +27,14 @@ const Header = ({ text,handleNavClick, active}) => {
       </div>
 
       {/* Right Section */}
-      <div className="header-right">
+      {/* <div className="header-right">
         <button className="btn primary-btn">
           <span className="icon">▶</span> File a New Form
         </button>
         <button className="btn secondary-btn">
           <span className="icon">💰</span> Pay Fees
         </button>
-      </div>
+      </div> */}
     </header>
   );
 };

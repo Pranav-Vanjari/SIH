@@ -1,16 +1,21 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./sidebar.css";
+import { TiHome } from "react-icons/ti";
+import { FaComments } from "react-icons/fa";
+import { IoIosSettings } from "react-icons/io";
+import { BiSolidReport } from "react-icons/bi";
+import { BsPuzzleFill } from "react-icons/bs";
 
 const Sidebar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: "Dashboard", path: "/dashboard", icon: "🏠" },
-    { name: "Comments", path: "/comments", icon: "💬" },
-    { name: "Reports", path: "/reports", icon: "📄" },
-    { name: "Solutions", path: "/solutions", icon: "🛠️" },
-    { name: "Settings", path: "/settings", icon: "⚙️" },
+    { name: "Dashboard", path: "/dashboard", icon: <TiHome /> },
+    { name: "Comments", path: "/comments", icon: <FaComments /> },
+    { name: "Reports", path: "/reports", icon: <BiSolidReport /> },
+    { name: "Solutions", path: "/solutions", icon: <BsPuzzleFill /> },
+    { name: "Settings", path: "/settings", icon: <IoIosSettings /> },
   ];
 
   const handleExport = () => {
