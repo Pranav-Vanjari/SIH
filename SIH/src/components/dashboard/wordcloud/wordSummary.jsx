@@ -9,7 +9,7 @@ const WordPage = ({ word, onClose }) => (
       <div className="modal-info">
         <h1 style={{ textAlign: "center" }}>{word}</h1>
         <p style={{ textAlign: "center", marginTop: "10px" }}>
-          This is the word page. The dashboard behind is blurred.
+          The organization has strengthened its regulatory compliance framework, ensuring all operations adhere to legal and industry standards. Monitoring and reporting mechanisms have been enhanced to reduce risks, while ongoing training ensures employees stay updated on new regulations and policies.
         </p>
       </div>
     </div>
