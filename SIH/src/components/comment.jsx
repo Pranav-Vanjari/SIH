@@ -3,47 +3,215 @@ import { useLocation } from "react-router-dom"; // import to read state
 import "./comment.css";
 
 const initialComments = [
+  // 🏞️ Community Parks
   {
-    Author: "Jane Doe",
-    Comment: "This new park is a wonderful addition to our community. My children love the new...",
+    Author: "Aarav Sharma",
+    Comment: "The new parks have really improved community life. Families now have clean and safe spaces to relax.",
     Sentiment: "Positive",
     Topic: "Community Parks",
-    Date: "Jul 20, 2024",
+    Date: "Sep 26, 2025",
     Status: "Published",
   },
   {
-    Author: "John Smith",
-    Comment: "The traffic situation on Main Street is becoming unbearable. We need better traf...",
+    Author: "Ritu Nair",
+    Comment: "Maintenance is poor. The swings are broken and lights don’t work properly after dark.",
+    Sentiment: "Negative",
+    Topic: "Community Parks",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Ankit Deshmukh",
+    Comment: "The idea of more parks is fine, but I don’t see any new ones being developed nearby yet.",
+    Sentiment: "Neutral",
+    Topic: "Community Parks",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+
+  // 🚗 Traffic
+  {
+    Author: "Sneha Patel",
+    Comment: "The new traffic management plan has reduced congestion during office hours. Great job!",
+    Sentiment: "Positive",
+    Topic: "Traffic",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Rahul Verma",
+    Comment: "Traffic is getting worse every day. Signals don’t work properly, and people keep violating rules.",
     Sentiment: "Negative",
     Topic: "Traffic",
-    Date: "Jul 19, 2024",
+    Date: "Sep 26, 2025",
     Status: "Published",
   },
   {
-    Author: "Emily White",
-    Comment: "The proposal for the new library seems well-thought-out. However, I’m concerned ...",
+    Author: "Kavya Singh",
+    Comment: "Traffic flow seems the same as before. Maybe it’ll take time to notice changes.",
+    Sentiment: "Neutral",
+    Topic: "Traffic",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+
+  // 📚 Public Library
+  {
+    Author: "Rohan Mehta",
+    Comment: "The upgraded library is excellent — digital access and quiet study zones make it a perfect place for students.",
+    Sentiment: "Positive",
+    Topic: "Public Library",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Priya Iyer",
+    Comment: "There are very few new books, and the computers often don’t work. Needs better management.",
+    Sentiment: "Negative",
+    Topic: "Public Library",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Manish Goyal",
+    Comment: "Library hours are decent. Nothing great, nothing bad — it’s okay for basic needs.",
     Sentiment: "Neutral",
     Topic: "Public Library",
-    Date: "Jul 19, 2024",
-    Status: "Draft",
+    Date: "Sep 26, 2025",
+    Status: "Published",
   },
+
+  // 🎓 Education Funding
   {
-    Author: "Michael Brown",
-    Comment: "I am thrilled about the increased funding for local schools. This will greatly b...",
+    Author: "Tanya Gupta",
+    Comment: "More funds for schools mean better infrastructure and quality teachers. Definitely a positive change.",
     Sentiment: "Positive",
     Topic: "Education Funding",
-    Date: "Jul 18, 2024",
+    Date: "Sep 26, 2025",
     Status: "Published",
   },
   {
-    Author: "Sarah Green",
-    Comment: "Why are our taxes going up again? This is unacceptable for working families ...",
+    Author: "Amit Joshi",
+    Comment: "Funds are announced but never properly used. Schools in rural areas still lack basic facilities.",
     Sentiment: "Negative",
-    Topic: "Tax Increase",
-    Date: "Jul 18, 2024",
+    Topic: "Education Funding",
+    Date: "Sep 26, 2025",
     Status: "Published",
   },
-];
+  {
+    Author: "Shreya Kulkarni",
+    Comment: "The funding policy looks fine on paper. Let’s wait to see how it’s implemented.",
+    Sentiment: "Neutral",
+    Topic: "Education Funding",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+
+  // 💰 Tax Increase
+  {
+    Author: "Vikram Reddy",
+    Comment: "I understand the need for higher taxes if it’s used for better infrastructure and welfare programs.",
+    Sentiment: "Positive",
+    Topic: "Tax Increase",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Pooja Agarwal",
+    Comment: "Tax burden on middle-class families is already high. Another hike makes life more difficult.",
+    Sentiment: "Negative",
+    Topic: "Tax Increase",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Kunal Malhotra",
+    Comment: "Taxes keep changing every year. I’ve stopped keeping track now.",
+    Sentiment: "Neutral",
+    Topic: "Tax Increase",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+
+  // 🎉 Community Events
+  {
+    Author: "Sana Sheikh",
+    Comment: "Local events like cultural fests and marathons bring people together. It’s great for bonding!",
+    Sentiment: "Positive",
+    Topic: "Community Events",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Ritesh Nair",
+    Comment: "Sometimes these events block roads and cause inconvenience. Planning could be better.",
+    Sentiment: "Negative",
+    Topic: "Community Events",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Divya Sharma",
+    Comment: "These events are okay, but I only attend occasionally. Nothing too special.",
+    Sentiment: "Neutral",
+    Topic: "Community Events",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+
+  // 🚌 Public Transit
+  {
+    Author: "Aditya Menon",
+    Comment: "Bus services have improved a lot — cleaner, more punctual, and easier to track through apps.",
+    Sentiment: "Positive",
+    Topic: "Public Transit",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Mitali Dey",
+    Comment: "Buses are still overcrowded during peak hours. Authorities should increase the frequency.",
+    Sentiment: "Negative",
+    Topic: "Public Transit",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Rajesh Pawar",
+    Comment: "Transit service is average — some routes are good, others still need attention.",
+    Sentiment: "Neutral",
+    Topic: "Public Transit",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+
+  // 🌱 Environmental Policy
+  {
+    Author: "Meera Krishnan",
+    Comment: "The new green initiatives show the government is serious about sustainability. Very encouraging!",
+    Sentiment: "Positive",
+    Topic: "Environmental Policy",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Deepak Chauhan",
+    Comment: "Policies look good on paper but there’s little enforcement. Pollution levels are still high.",
+    Sentiment: "Negative",
+    Topic: "Environmental Policy",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  },
+  {
+    Author: "Isha Patel",
+    Comment: "Environmental rules seem balanced, but let’s see if they’re followed consistently.",
+    Sentiment: "Neutral",
+    Topic: "Environmental Policy",
+    Date: "Sep 26, 2025",
+    Status: "Published",
+  }
+]
+;
 
 const topics = [
   "All Topics",
@@ -55,6 +223,9 @@ const topics = [
   "Community Events",
   "Public Transit",
   "Environmental Policy",
+  "Board of Directors",
+  "Investor Relations",
+  "Compliance Officer",
 ];
 
 const sentiments = ["All Sentiments", "Positive", "Negative", "Neutral"];

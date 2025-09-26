@@ -7,14 +7,14 @@ const WordCloud = ({ onWordClick }) => {
   const svgRef = useRef();
 
   const words = [
-    { text: "Accounting", value: 14 },
-    { text: "Risk", value: 20 },
-    { text: "Regulation", value: 18 },
-    { text: "Ethics", value: 12 },
-    { text: "Oversight", value: 16 },
-    { text: "Audit Trail", value: 10 },
-    { text: "Internal Controls", value: 15 },
-    { text: "Financial Statements", value: 22 },
+    { text: "Community Parks", value: 14 },
+    { text: "Traffic", value: 20 },
+    { text: "public Library", value: 18 },
+    { text: "Education Funding", value: 12 },
+    { text: "Tax increase", value: 16 },
+    { text: "Community Events ", value: 10 },
+    { text: "Public Transits", value: 15 },
+    { text: "Enviromental Policy", value: 22 },
     { text: "Board of Directors", value: 12 },
     { text: "Investor Relations", value: 10 },
     { text: "Compliance Officer", value: 9 },
